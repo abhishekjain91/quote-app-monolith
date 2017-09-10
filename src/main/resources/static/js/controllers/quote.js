@@ -24,7 +24,7 @@ angular.module('app.controllers', [])
 })
 
 .controller('GetQuotesCtrl', function($scope, $state, QuoteService) {
-	QuoteService.
+	QuoteService.random()
 		.$promise.then(function(quote) {
 			$scope.quote = quote;
 		});
