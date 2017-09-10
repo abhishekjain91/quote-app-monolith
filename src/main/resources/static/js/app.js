@@ -24,7 +24,7 @@ app.config(function($urlRouterProvider, $stateProvider) {
             controller: "SaveQuoteCtrl"
         })
         .state("author", {
-            url: "/add",
+            url: "/author",
             templateUrl : "templates/author.html",
             controller: "RandomQuoteCtrl"
         });
