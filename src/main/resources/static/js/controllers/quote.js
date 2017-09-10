@@ -21,4 +21,13 @@ angular.module('app.controllers', [])
             }
         );
     };
-});
+})
+
+.controller('GetQuotesCtrl', function($scope, $state, QuoteService) {
+	QuoteService.
+		.$promise.then(function(quote) {
+			$scope.quote = quote;
+		});
+})
+
+;
