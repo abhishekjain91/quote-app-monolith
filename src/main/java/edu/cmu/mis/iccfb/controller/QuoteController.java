@@ -45,12 +45,4 @@ public class QuoteController {
         quoteService.save(quote);
     }
     
-    @RequestMapping(value = "/api/author", method = RequestMethod.GET)
-    public void getQuotes(@ RequestBody Author author) {
-    	//System.out.println(author);
-    	
-    	System.out.println("Aloha");
-    	
-    }
-
 }
