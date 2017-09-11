@@ -5,7 +5,7 @@ angular.module('app.controllers', [])
 .controller('RandomQuoteCtrl', function($scope, QuoteService) {
 	QuoteService.random()
 		.$promise.then(function(quote) {
-			$scope.quote = quote1;
+			$scope.quote = quote;
 		});
 })
 .controller('SaveQuoteCtrl', function($scope, $state, QuoteService) {
@@ -24,8 +24,6 @@ angular.module('app.controllers', [])
 })
 
 .controller('GetQuotesCtrl', function($scope, $state, AuthorService) {
-	AuthorService.random()
-		.$promise.then(function(quote) {
-			$scope.author = author;
+			$scope.author = "author";						
 		});
 });
