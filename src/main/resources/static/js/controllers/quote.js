@@ -21,9 +21,4 @@ angular.module('app.controllers', [])
             }
         );
     };
-})
-
-.controller('GetQuotesCtrl', function($scope, $state, AuthorService) {
-			$scope.author = "author";						
-		});
 });
