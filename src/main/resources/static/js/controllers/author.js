@@ -1,8 +1,8 @@
 'use strict'
 angular.module('app.controllers', [])
 
-.controller('GetAuthorQuotesCtrl', function($scope, $state, AuthorService) {
-		AuthorService.get({authorId: $state.authorId},function(author){	
+.controller('GetAuthorQuotesCtrl', function($scope,  AuthorService, $stateParams) {
+		AuthorService.get({authorId:$stateParams.authorId},function(author){	
 			$scope.author = author;
 			)};
 });

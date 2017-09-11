@@ -18,8 +18,9 @@ public class AuthorController {
     @Autowired
     private AuthorService authorService;
     
-    @RequestMapping("/api/author/")
+    @RequestMapping("/api/author")
     public Iterable<Author> getAuthors() {
+    	System.out.println("hello123");
     	Iterable<Author> authors = this.authorService.findAll();
     	return authors;
     }
