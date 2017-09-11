@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service;
 import edu.cmu.mis.iccfb.model.Author;
 
 @Service
-public interface AuthorService extends CrudRepository<Author, Long>, AuthorServiceCustom {
+public interface AuthorService extends CrudRepository<Author, Long> {
 
     Author findByName(String name);
     
-    Author getAllQuotes(String name);
+    //Author getAllQuotes(String name);
 
 }
