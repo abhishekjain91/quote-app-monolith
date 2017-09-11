@@ -9,5 +9,7 @@ import edu.cmu.mis.iccfb.model.Author;
 public interface AuthorService extends CrudRepository<Author, Long>, AuthorServiceCustom {
 
     Author findByName(String name);
+    
+    Author getAllQuotes(String name);
 
 }

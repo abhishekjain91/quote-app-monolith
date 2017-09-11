@@ -9,7 +9,7 @@ public class AuthorServiceImpl implements AuthorServiceCustom {
 	@Autowired
     private AuthorService authorService;
 	
-	public Author findByName(String name) {
+	public Author getAllQuotes(String name) {
 		Author author = new Author(name);
 		
 		return author;

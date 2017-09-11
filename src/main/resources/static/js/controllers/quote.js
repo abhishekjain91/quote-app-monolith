@@ -23,11 +23,9 @@ angular.module('app.controllers', [])
     };
 })
 
-.controller('GetQuotesCtrl', function($scope, $state, QuoteService) {
-	QuoteService.random()
+.controller('GetQuotesCtrl', function($scope, $state, AuthorService) {
+	AuthorService.random()
 		.$promise.then(function(quote) {
-			$scope.quote = quote;
+			$scope.author = author;
 		});
-})
-
-;
+});

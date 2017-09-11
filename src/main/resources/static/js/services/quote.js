@@ -9,4 +9,13 @@ angular.module('app.services', [])
 			url: '/api/quote/random'
 		}
 	});
+})
+
+.factory('AuthorService', function($resource){
+	return $resource('/api/:author', {author:'@_author'}, {
+		random: {
+			method: 'GET',
+			url: '/api/author'
+		}
+	});
 });
