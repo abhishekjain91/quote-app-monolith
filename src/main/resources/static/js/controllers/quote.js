@@ -17,7 +17,7 @@ angular.module('app.controllers', [])
                 $state.go("quote", {});
             },
             function(err) {
-                console.log(err);
+                console.log(err); 
             }
         );
     };

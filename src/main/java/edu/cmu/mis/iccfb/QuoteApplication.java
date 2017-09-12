@@ -12,6 +12,6 @@ public class QuoteApplication {
     private SeedData seedData;
     
     public static void main(String[] args) {
-        SpringApplication.run(QuoteApplication.class, args);
+        SpringApplication.run(QuoteApplication.class, args); 
 	}
 }

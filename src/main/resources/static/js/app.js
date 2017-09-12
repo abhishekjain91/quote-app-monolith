@@ -26,6 +26,6 @@ app.config(function($urlRouterProvider, $stateProvider) {
 		.state("author", {
 	    	url: "/author/{authorId}",
             templateUrl : "templates/author.html",
-            controller: "GetAuthorCtrl"
+            controller: "GetAuthorQuoteCtrl"
 		});
 });

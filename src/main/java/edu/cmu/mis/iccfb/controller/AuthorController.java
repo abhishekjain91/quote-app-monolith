@@ -18,17 +18,4 @@ public class AuthorController {
     @Autowired
     private AuthorService authorService;
     
-    @RequestMapping("/api/author")
-    public Iterable<Author> getAuthors() {
-    	System.out.println("hello123");
-    	Iterable<Author> authors = this.authorService.findAll();
-    	return authors;
-    }
-    
-    @RequestMapping("/api/author/{id}")
-	public Author getAuthor(@PathVariable("id") long id) {
-    	System.out.println("hello");
-    	Author author = this.authorService.findOne(id);
-		return author;
-	}
 }

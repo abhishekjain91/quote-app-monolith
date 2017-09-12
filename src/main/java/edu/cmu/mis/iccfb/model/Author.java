@@ -57,4 +57,5 @@ public class Author {
 	public void setQuotes(List<Quote> quotes) {
 		this.quotes = quotes;
 	}
+	
 }

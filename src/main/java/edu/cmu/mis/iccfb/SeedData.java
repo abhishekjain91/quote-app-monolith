@@ -60,7 +60,7 @@ public class SeedData {
         
         Quote q5 = new Quote(
                 "The mind is everything. What you think you become.", 
-                "https://en.wikiquote.org/wiki/Gautama_Buddha", 
+                "https://en.wikiquote.org/wiki/Gautama_Buddha",  
                 a2);
         
         quoteService.save(q1);
