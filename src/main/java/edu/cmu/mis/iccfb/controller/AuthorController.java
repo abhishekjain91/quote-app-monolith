@@ -17,7 +17,9 @@ public class AuthorController {
 
 	@Autowired
     private AuthorService authorService;
-       
+    
+	// This is to map the incoming request in the URL to this controller.
+	// This indirectly call the service and fetches the quotes according to the author.
     @RequestMapping("/api/author/{id}")
 	public Author getAuthor(@PathVariable("id") long id) {
     	System.out.println("Get author and his quotes");
