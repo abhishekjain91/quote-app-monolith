@@ -45,4 +45,7 @@ public class QuoteController {
         quoteService.save(quote);
     }
     
+    // Add new method for Author Controller.
+    // Make a separate file for this, to comply with SOLID principles and better maintainance of code.
+    
 }

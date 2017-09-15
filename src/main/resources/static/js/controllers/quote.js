@@ -1,6 +1,7 @@
 'use strict'
 
-angular.module('app.controllers', [])
+// remove square brackets from below statement as we have divided angular.module('app.controllers')  into multiple files.
+angular.module('app.controllers')
 
 .controller('RandomQuoteCtrl', function($scope, QuoteService) {
 	QuoteService.random()

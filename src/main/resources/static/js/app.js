@@ -23,6 +23,8 @@ app.config(function($urlRouterProvider, $stateProvider) {
             templateUrl : "templates/add.html",
             controller: "SaveQuoteCtrl"
         })
+        // Added a new routing mechanism to redirect to the new page.
+        // We also add the controller to be called in this process.
 		.state("author", {
 	    	url: "/author/{authorId}",
             templateUrl : "templates/author.html",

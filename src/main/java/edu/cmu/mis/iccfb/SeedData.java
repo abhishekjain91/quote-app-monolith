@@ -53,11 +53,13 @@ public class SeedData {
                 "https://en.wikiquote.org/wiki/Albert_Einstein", 
                 a3);
         
+        //Added new quote for the existing authors
         Quote q4 = new Quote(
                 "Imagination is more important than knowledge.", 
                 "https://en.wikiquote.org/wiki/Albert_Einstein", 
                 a3);
         
+        //Added new quote for the existing authors
         Quote q5 = new Quote(
                 "The mind is everything. What you think you become.", 
                 "https://en.wikiquote.org/wiki/Gautama_Buddha",  
@@ -66,6 +68,7 @@ public class SeedData {
         quoteService.save(q1);
         quoteService.save(q2);
         quoteService.save(q3);
+        // Add the quotes to the quote service 
         quoteService.save(q4);
         quoteService.save(q5);
         

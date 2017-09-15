@@ -15,7 +15,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 @RestController
 public class AuthorController {
 
-    @Autowired
+	@Autowired
     private AuthorService authorService;
+       
+    @RequestMapping("/api/author/{id}")
+	public Author getAuthor(@PathVariable("id") long id) {
+    	System.out.println("Get author and his quotes");
+    	Author authors = this.authorService.findOne(id);
+		return authors;
+	}
     
 }
